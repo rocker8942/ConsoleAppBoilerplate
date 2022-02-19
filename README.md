@@ -1,4 +1,4 @@
-# ConsoleAppBoilerplate
+# Console App Boilerplate
 .Net framework console app boilerplate
 
 This console app is a starting point when creating a console app based on .net framework. 
