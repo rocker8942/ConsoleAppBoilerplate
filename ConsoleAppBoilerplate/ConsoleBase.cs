@@ -1,9 +1,22 @@
 ﻿using System;
+using AutoMapper;
 
 namespace ConsoleAppBoilerplate
 {
-    internal class ConsoleBase
+    public interface IConsoleBase
     {
+        void Start();
+    }
+
+    public class ConsoleBase : IConsoleBase
+    {
+        private readonly IMapper _mapper;
+
+        public ConsoleBase(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
+
         public void Start()
         {
             throw new NotImplementedException();
